@@ -2,10 +2,10 @@
 require_once 'DB_Functions.php';
 require_once('connection.php');
 
-session_unset();
+//session_unset();
 
 // destroy the session
-session_destroy(); 
+//session_destroy(); 
 					
 
 session_start();
@@ -740,4 +740,4 @@ mysqli_query($con,$query15) or die(mysqli_error($con));}}else{echo "Fees already
     $response["error_msg"] = "Required parameters email or password is missing!";
     echo json_encode("Email or Password is missing!");
 }
-?>
+
